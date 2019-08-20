@@ -1,5 +1,5 @@
 /*
-N-natural number
+Factorial number
 */
 
 #include<iostream>
