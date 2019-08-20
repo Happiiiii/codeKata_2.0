@@ -32,12 +32,13 @@ int main()
 using namespace std;
 
 int main()
-{int num,i,sum;
-cin >> num;
-for(i=0;i<=num;i++)
 {
- sum = sum + i;
-}
-cout << sum;
-return 0;
+    int num,i,sum;
+    cin >> num;
+    for(i=0;i<=num;i++)
+    {
+     sum = sum + i;
+    }
+    cout << sum;
+    return 0;
 }
