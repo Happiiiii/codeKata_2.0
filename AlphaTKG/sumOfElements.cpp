@@ -23,7 +23,9 @@ int main()
 }
 
 
-/*sum of elements => limit*/
+/*sum of elements 
+=> 5
+(5+4+3+2+1)=15*/
 
 #include <iostream>
 
