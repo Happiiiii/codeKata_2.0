@@ -1,5 +1,5 @@
 /*
-sum of elements
+sum of elements => array
 */
 
 #include<iostream>
@@ -20,4 +20,22 @@ int main()
         sum = sum + arr[i];
     }
      cout << sum;
+}
+
+
+/*sum of elements => limit*/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{int num,i,sum;
+cin >> num;
+for(i=0;i<=num;i++)
+{
+ sum = sum + i;
+}
+cout << sum;
+return 0;
 }
