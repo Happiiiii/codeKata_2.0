@@ -58,13 +58,14 @@ using namespace std;
 
 int main()
 {
-   char ch='A';
+// char ch='A';
 //   for(ch='A';ch<='Z';ch++)
 //   {
 //       cout<<ch<<" ";
 //   }
 //     return 0;
 
+char ch='A';
 while(ch<='Z')
 {
     cout << ch << " ";
@@ -255,6 +256,121 @@ int main()
 }
 -------------------------------------------------------------------------------------------------------------------------
 /*
-
+Write a program to find first and last digit of a number.
+123
+1 3
 */
+#include <iostream>
+using namespace std;
 
+int main()
+{
+    int num,fst,lst;
+    cin >> num;
+    fst = num;
+    lst = num % 10;
+     while(fst>=10)
+  {
+      fst = fst/10;
+  }
+  cout << fst << " " << lst << endl;
+  
+    //for(fst=num;fst>=10;fst=fst/10)
+   // {
+        //
+   // }
+   // cout<<fst<<" "<<lst;
+   // return 0;
+}
+-------------------------------------------------------------------------------------------------------------------------------------
+/*
+Write a program to find sum of first and last digit of a number.
+123
+1 3
+1+3=4
+*/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int num,fst,lst;
+  cin >> num;
+  fst = num;
+  lst = num % 10;
+  while(fst>=10)
+  {
+      fst = fst/10;
+  }
+  cout << fst << " " << lst << endl;
+  cout << fst+lst ;
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------------------------------------
+/* 
+Write a program to swap first and last digits of a number.
+*/
+----------------------------------------------------------------------------------------------------------------------------------------
+/*
+Write a program to calculate sum of digits of a number
+123
+1+2+3=6
+*/
+#include<iostream>
+using namespace std;
+ 
+int main()
+{
+    int  num, sum = 0,rem;
+    cin >> num;
+    while (num > 0)
+    {
+        rem = num % 10;
+        sum = sum + rem;
+        num = num / 10;
+    }
+    cout  << sum;
+}
+----------------------------------------------------------------------------------------------------------------------------------------
+/*
+Write a program to calculate product of digits of a number.
+123
+1*2*3=6
+*/
+#include<iostream>
+using namespace std;
+ 
+int main()
+{
+   int num,product=1,rem;
+   cin >> num;
+   while(num>0)
+   {
+       rem = num % 10;   
+       product = product * rem;
+       num = num / 10;
+   }
+   cout << product;
+}
+---------------------------------------------------------------------------------------------------------------------------------------
+/*
+Write a program to enter a number and print its reverse.
+12345
+54321
+*/
+#include<iostream>
+using namespace std;
+ 
+int main()
+{
+   int num,rev=0,rem;
+   cin >> num;
+  while(num>0)
+  {
+      rem=num%10;
+      rev=rev*10+rem;
+      num=num/10;
+  }
+  cout<<rev;
+}
+----------------------------------------------------------------------------------------------------------------------------------------
