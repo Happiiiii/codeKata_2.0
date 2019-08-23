@@ -33,11 +33,13 @@ using namespace std;
 
 int main()
 {
-    int num,i,sum;
+    int num,i,sum=0,rem;
     cin >> num;
-    for(i=0;i<=num;i++)
+   while( num > 0)
     {
-     sum = sum + i;
+     rem = num%10;
+     sum = sum + rem;
+     num = num/10;
     }
     cout << sum;
     return 0;
