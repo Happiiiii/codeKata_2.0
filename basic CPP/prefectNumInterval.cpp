@@ -16,7 +16,6 @@ int main()
 
     for(i=a; i<=b; i++)
     {
-        sum = 0;
         for(j=1; j<i; j++)
         {
             if(i % j == 0)
@@ -29,6 +28,7 @@ int main()
         {
            cout<<i<<endl;
         }
+         sum = 0;
     }
 
     return 0;
