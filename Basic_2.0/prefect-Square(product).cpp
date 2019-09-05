@@ -12,9 +12,15 @@ using namespace std;
 
 int main()
 {
-  int a,b,c,i,flag=false;
+  int a,b,c,i,flag=false,temp;
   cin>>a>>b;
   c=a*b;
+  if(a>b)
+  {
+      temp=a;
+      a=b;
+      b=temp;
+  }
   for(i=a;i<=b;i++)
   {
       if(i==i)
