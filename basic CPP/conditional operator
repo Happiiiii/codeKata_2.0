@@ -1,0 +1,67 @@
+/*
+4 
+even
+*/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int num;
+  cin>> num;
+  /*---------if-------------|---else------*/
+  (num%2==0) ? cout<<"even" : cout<<"odd"; 
+  return 0;
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+/*
+d alphabet
+3 not
+$ not
+*/
+#include <iostream>
+#include<string.h>
+using namespace std;
+
+int main()
+{
+  char str;
+  cin>> str;;
+  (str>='A' && str<='Z' || str>='a' && str<='z') ? cout<<"alphabet" : cout<<"not";
+  return 0;
+}
+--------------------------------------------------------------------------------------------------------------------------------
+/*
+2 4 3
+4
+*/
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int a,b,c,max;
+    cin >>a>>b>>c;
+    max = ( a>b && a>c ) ? a : ( b>c ) ? b : c; 
+    cout << max;
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------------------------------
+/*
+2019
+not
+2020
+leap year
+*/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int year;
+  cin>> year;
+  (year%400==0 || year%4==0 && year%100!=0) ? cout<<"leap year" : cout<<"not" ;
+  return 0;
+}
+---------------------------------------------------------------------------------------------------------------------------------
