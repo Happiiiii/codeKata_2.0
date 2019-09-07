@@ -19,14 +19,16 @@ int main()
     {
         cin>>arr[i];
     }
-    sumArray(arr,0,num);
+    int sum = sumArray(arr,0,num);
+    cout<<sum;
 }
+
 int sumArray(int arr[],int start,int len)
 {
-    int sum=0;
-    for(int i=0;i<len;i++)
+    if(start>=len)
     {
-        sum=sum+arr[i];
+        return 0;
     }
-    cout<<sum;
+    return(arr[start] + sumArray(arr,start+1,len));
+   
 }
