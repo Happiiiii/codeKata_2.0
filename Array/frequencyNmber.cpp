@@ -1,3 +1,4 @@
+
 /*
 Write a program to count frequency of each element in an array.
 5                                                                                                                              
@@ -7,44 +8,33 @@ Write a program to count frequency of each element in an array.
 5 = 2                                                                                                                          
 1 = 1 
 */
-#include <iostream>
+#include<iostream>
+#include<stdio.h>
 using namespace std;
 
 int main()
 {
     int num;
     cin>>num;
+    
+    int count=0;
+    int rem=0;
     int i,j;
-    int fre[num];
-    int arr[num];
-    for(i=0;i<num;i++)
+    
+    for(i=0;i<10;i++)
     {
-        cin>>arr[i];
-        fre[i]=-1;
-    }
-    int count;
-    for(i=0; i<num; i++)
-    {
-        count = 1;
-        for(j=i+1; j<num; j++)
+        for(j=num;j>0;j=j/10)
         {
-            if(arr[i]==arr[j])
+            rem=j%10;
+            if(rem==i)
             {
                 count++;
-                fre[j] = 0;
             }
         }
-        if(fre[i] != 0)
+        if(count>0)
         {
-            fre[i] = count;
+           cout<<i<<" => "<<count<<endl;
         }
+        count=0;
     }
-    for(i=0; i<num; i++)
-    {
-        if(fre[i] != 0)
-        {
-            cout<< arr[i]<<" = "<< fre[i]<<endl;
-        }
-    }
-    return 0;
 }
