@@ -1,12 +1,11 @@
 
 /*
 Write a program to count frequency of each element in an array.
-5                                                                                                                              
-3 4 5 5 1                                                                                                                     
-3 = 1                                                                                                                          
-4 = 1                                                                                                                          
-5 = 2                                                                                                                          
-1 = 1 
+12334
+1 => 1
+2 => 1
+3 => 2
+4 => 1
 */
 #include<iostream>
 #include<stdio.h>
